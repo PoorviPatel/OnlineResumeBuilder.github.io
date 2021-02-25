@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_personal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccc"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/card_background"
+        android:orientation="vertical" >
+
+        <TextView
+            android:text="@string/personal_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:textStyle="bold|italic"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/personal_info" />
+
+        <EditText
+            android:id="@+id/dob"
+            style="@style/EditTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/date_of_birth"
+            android:inputType="textPersonName" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/marital_status"
+            style="@style/EditTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/marital_status"
+            android:inputType="text" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/hobbies"
+            style="@style/EditTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/hobbies"
+            android:inputType="text" >
+        </EditText>
+
+
+        <TextView
+            android:text="@string/gender"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            style="@style/HeadingTextViewStyle"
+            android:textColor="#708391"
+            android:id="@+id/gender" />
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gender"
+            android:layout_marginTop="2dp"
+            android:weightSum="1"
+            android:textColor="#708391"
+            android:id="@+id/radioGroup">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female"
+                android:id="@+id/femle"
+                android:checked="false"
+                android:textColor="#708391"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male"
+                android:id="@+id/male"
+                android:textColor="#708391"
+                android:checked="false"
+                android:textSize="20dp" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/other_info_p"
+            style="@style/EditTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:hint="@string/add_other_information_personal"
+            android:inputType="textPersonName" >
+        </EditText>
+
+
+    </LinearLayout>
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:translationY="-30dp"
+        android:background="@drawable/save"
+        android:layout_marginLeft="170dp"
+        android:id="@+id/button" />
+
+<!--
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2" />-->
+</LinearLayout>
+
+</ScrollView>

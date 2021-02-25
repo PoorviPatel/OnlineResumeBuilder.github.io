@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_experience"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccc"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/card_background"
+        android:orientation="vertical" >
+
+        <TextView
+            android:text="@string/experience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/experience" />
+
+        <EditText
+            android:id="@+id/designation"
+            style="@style/EditTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/designation"
+            android:inputType="textPersonName" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/organization"
+            style="@style/EditTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:hint="@string/organization"
+            android:inputType="textWebEmailAddress" >
+        </EditText>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+            <EditText
+                android:id="@+id/startDateWE"
+                style="@style/EditTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:inputType="textWebEditText"
+                android:background="@drawable/card_background"
+                android:hint="@string/start_date_experience" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/endDateWE"
+                style="@style/EditTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="textWebEditText"
+                android:padding="10dp"
+                android:gravity="center"
+                android:background="@drawable/card_background"
+                android:hint="end Date" >
+            </EditText>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/role"
+            style="@style/EditTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:hint="@string/role"
+            android:inputType="textWebEmailAddress" >
+        </EditText>
+
+    </LinearLayout>
+    <Button
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:translationY="-30dp"
+        android:background="@drawable/save"
+        android:layout_marginLeft="120dp"
+        android:id="@+id/button" />
+
+    <ImageButton
+        android:id="@+id/add"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="200dp"
+        android:background="@drawable/circle_background"
+        android:src="@drawable/ic_action_new_light"
+        android:translationY="-80dp" >
+    </ImageButton>
+
+    <!--<TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2" />-->
+</LinearLayout>
+
+</ScrollView>

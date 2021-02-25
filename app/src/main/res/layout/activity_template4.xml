@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/activity_activities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="#ccc"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t1_name"
+                    android:textSize="11dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColorPrimary"
+                    android:background="@color/col_t3"
+                    android:padding="1dp"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:text="Rohan Der" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t1_email"
+                    android:textAlignment="center"
+                    android:textSize="8dp"
+                    android:textColor="@color/navigationBarColor"
+                    android:background="@color/col_ccc"
+                    android:padding="1dp"
+                    android:text="rohander@gmail.com"
+                    android:layout_below="@+id/t1_name"
+                    android:layout_marginTop="1dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t1_phno"
+                    android:textAlignment="center"
+                    android:textSize="8dp"
+                    android:textColor="@color/textColorPrimary"
+                    android:background="@color/col_t3"
+                    android:padding="1dp"
+                    android:text="9898530358"
+                    android:layout_below="@+id/t1_email"
+                    android:layout_marginTop="1dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t1_text1"
+                    android:textAlignment="center"
+                    android:textSize="9dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColorPrimary"
+                    android:background="@color/col_t3"
+                    android:padding="5dp"
+                    android:text="@string/career_objective"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t1_obj"
+                    android:textSize="8dp"
+                    android:text="Seeking a position at XYZ Company where I can maximize my 10+ years of management, quality assurance, program development, and training experience."
+                    android:padding="2dp"
+                    android:textColor="@color/navigationBarColor" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t1_text2"
+                    android:textAlignment="center"
+                    android:textSize="9dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColorPrimary"
+                    android:background="@color/col_t3"
+                    android:padding="5dp"
+                    android:text="@string/personal_details"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_alignParentStart="true" />
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/t1_text3"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="8dp"
+                        android:padding="2dp"
+                        android:textColor="@color/navigationBarColor"
+                        android:text="@string/date_of_birth" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/t1_dob"
+                        android:text="10/5/1995 "
+                        android:textSize="8dp"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="@color/navigationBarColor"
+                        android:padding="2dp" />
+                </LinearLayout>
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+
+                    <TextView
+                        android:id="@+id/t1_text4"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="8dp"
+                        android:padding="2dp"
+                        android:textColor="@color/navigationBarColor"
+                        android:text="@string/marital_status" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/t1_marital"
+                        android:text="Single "
+                        android:textSize="8dp"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="@color/navigationBarColor"
+                        android:padding="2dp" />
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+
+                    <TextView
+                        android:id="@+id/t1_text5"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="8dp"
+                        android:padding="2dp"
+                        android:textColor="@color/navigationBarColor"
+                        android:text="@string/hobbies" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/t1_hobbies"
+                        android:text="Reading,Singing,drawing "
+                        android:textSize="8dp"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="@color/navigationBarColor"
+                        android:padding="2dp" />
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+
+                    <TextView
+                        android:id="@+id/t1_text6"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="8dp"
+                        android:padding="2dp"
+                        android:textColor="@color/navigationBarColor"
+                        android:text="@string/gender" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/t1_gender"
+                        android:text="Male "
+                        android:textSize="8dp"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="@color/navigationBarColor"
+                        android:padding="2dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t1_text7"
+                    android:textAlignment="center"
+                    android:textSize="9dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColorPrimary"
+                    android:background="@color/col_t3"
+                    android:padding="5dp"
+                    android:text="@string/experience"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t1_designation"
+                    android:textAlignment="center"
+                    android:textColor="@color/navigationBarColor"
+                    android:textSize="8dp"
+                    android:text="Tehnical Assistant"
+                    android:padding="2dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t1_organization"
+                    android:textAlignment="center"
+                    android:textSize="8dp"
+                    android:textColor="@color/navigationBarColor"
+                    android:text="procode/oct 2016-present"
+                    android:padding="2dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t1_role"
+                    android:textAlignment="center"
+                    android:textSize="8dp"
+                    android:textColor="@color/navigationBarColor"
+                    android:text="All kind of technical stuff!"
+                    android:layout_below="@+id/t1_email"
+                    android:padding="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t1_text8"
+                    android:textAlignment="center"
+                    android:textSize="9dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColorPrimary"
+                    android:background="@color/col_t3"
+                    android:padding="5dp"
+                    android:text="@string/project_information"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t1_pro_title"
+                    android:textAlignment="center"
+                    android:textSize="8dp"
+                    android:textColor="@color/navigationBarColor"
+                    android:text="Help Desk"
+                    android:padding="2dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t1_description"
+                    android:textAlignment="center"
+                    android:textSize="8dp"
+                    android:textColor="@color/navigationBarColor"
+                    android:text="Help desk for any business or enterprise with realtime connection between user and support team."
+                    android:padding="2dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t1_frontend"
+                    android:textAlignment="center"
+                    android:textSize="8dp"
+                    android:textColor="@color/navigationBarColor"
+                    android:text="Front end : Android"
+                    android:padding="2dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t1_back_end"
+                    android:textAlignment="center"
+                    android:textSize="8dp"
+                    android:textColor="@color/navigationBarColor"
+                    android:text="Back end : sql server"
+                    android:padding="2dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t1_date"
+                    android:textAlignment="center"
+                    android:textSize="8dp"
+                    android:textColor="@color/navigationBarColor"
+                    android:text="Design and Devlopment/Duration : 6 month"
+                    android:padding="2dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t1_team_member"
+                    android:textAlignment="center"
+                    android:textSize="8dp"
+                    android:textColor="@color/navigationBarColor"
+                    android:text="Team member(s):3"
+                    android:padding="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t1_text9"
+                    android:textAlignment="center"
+                    android:textSize="9dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColorPrimary"
+                    android:background="@color/col_t3"
+                    android:padding="5dp"
+                    android:text="@string/education_information"
+                    android:layout_marginTop="4dp" />
+
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/t1_education1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="8dp"
+                        android:padding="2dp"
+                        android:textColor="@color/navigationBarColor"
+                        android:text="High school with 86% in 2013 csu " />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/t1_education2"
+                        android:text="B.tech. with 4.89 cgpa(pursuing) csu "
+                        android:textSize="8dp"
+                        android:textColor="@color/navigationBarColor"
+                        android:padding="2dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t1_text10"
+                    android:textAlignment="center"
+                    android:textSize="9dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColorPrimary"
+                    android:background="@color/col_t3"
+                    android:padding="5dp"
+                    android:text="@string/other_information"
+                    android:layout_marginTop="4dp" />
+
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/t1_text11"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="8dp"
+                        android:padding="2dp"
+                        android:textColor="@color/navigationBarColor"
+                        android:text="@string/language_known" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/t1_lang"
+                        android:text="English,Gujrati,Hindi"
+                        android:layout_marginLeft="30dp"
+                        android:textSize="8dp"
+                        android:textColor="@color/navigationBarColor"
+                        android:padding="2dp" />
+                </LinearLayout>
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/t1_text12"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="8dp"
+                        android:padding="2dp"
+                        android:textColor="@color/navigationBarColor"
+                        android:text="@string/technical_skills" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/t1_tech_skill"
+                        android:text="C,C++,JAVA"
+                        android:layout_marginLeft="30dp"
+                        android:textSize="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/navigationBarColor"
+                        android:padding="2dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/button"
+            android:padding="10dp"
+            android:background="@color/col_t3"
+            android:textColor="@color/textColorPrimary"
+            android:bottomRightRadius="118dp"
+            android:bottomLeftRadius="8dp"
+            android:topRightRadius="8dp"
+            android:topLeftRadius="8dp"
+            android:text="@string/create_pdf"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/button1"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/col_t3"
+            android:textColor="@color/textColorPrimary"
+            android:bottomRightRadius="118dp"
+            android:bottomLeftRadius="8dp"
+            android:topRightRadius="8dp"
+            android:topLeftRadius="8dp"
+            android:text="@string/send_pdf"/>
+    </LinearLayout>
+</ScrollView>
+
+
+
+            
+                
+                    
+            
