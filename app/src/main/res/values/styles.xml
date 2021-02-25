@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+
+    </style>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="EditTextViewStyle">
+        <item name="android:textColor">@color/navigationBarColor</item>
+        <item name="android:textColorHint">@color/colorEdit</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:textSize">@dimen/textsize</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="HeadingTextViewStyle">
+        <item name="android:textColor">@color/navigationBarColor</item>
+        <item name="android:textSize">@dimen/textsize</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="HomeButton">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#125688</item>
+        <item name="android:background">@null</item>
+    </style>
+</resources>

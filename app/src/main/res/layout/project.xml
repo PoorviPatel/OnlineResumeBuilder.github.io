@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_project_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="horizontal"
+    android:background="#ccc"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/card_background"
+        android:orientation="vertical" >
+
+        <TextView
+            android:text="@string/project_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textStyle="bold|italic"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/project_info" />
+
+        <EditText
+            android:id="@+id/project_title"
+            style="@style/EditTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/project_title"
+            android:inputType="textPersonName" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/description"
+            style="@style/EditTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/description_project"
+            android:lines="5"
+            android:inputType="textPersonName" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/frontend"
+            style="@style/EditTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/front_end"
+            android:inputType="text" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/backend"
+            style="@style/EditTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/back_end"
+            android:inputType="text" >
+        </EditText>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+            <EditText
+                android:id="@+id/startDatePI"
+                style="@style/EditTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:inputType="textWebEditText"
+                android:background="@drawable/card_background"
+                android:hint="@string/start_date_project" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/endDatePI"
+                style="@style/EditTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="textWebEditText"
+                android:padding="10dp"
+                android:gravity="center"
+                android:background="@drawable/card_background"
+                android:hint="@string/end_date_project" >
+            </EditText>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/team_member"
+            style="@style/EditTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:hint="@string/team_members"
+            android:inputType="text" >
+        </EditText>
+
+    </LinearLayout>
+    <Button
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:translationY="-30dp"
+        android:background="@drawable/save"
+        android:layout_marginLeft="120dp"
+        android:id="@+id/button" />
+
+    <ImageButton
+        android:id="@+id/add"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="200dp"
+        android:background="@drawable/circle_background"
+        android:src="@drawable/ic_action_new_light"
+        android:translationY="-80dp" >
+    </ImageButton>
+
+    <!--<TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2" />-->
+</LinearLayout>
+    </ScrollView>
+
